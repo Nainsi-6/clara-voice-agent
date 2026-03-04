@@ -1,0 +1,64 @@
+{
+  "account_id": "acc_fireguard_001",
+  "company_name": "FireGuard Protection Services",
+  "industry": "Fire Protection",
+  "business_hours": {
+    "monday_start": null,
+    "monday_end": null,
+    "tuesday_start": null,
+    "tuesday_end": null,
+    "wednesday_start": null,
+    "wednesday_end": null,
+    "thursday_start": null,
+    "thursday_end": null,
+    "friday_start": null,
+    "friday_end": null,
+    "saturday_start": null,
+    "saturday_end": null,
+    "sunday_start": null,
+    "sunday_end": null,
+    "timezone": "EST"
+  },
+  "office_address": null,
+  "office_phone": null,
+  "services_supported": [
+    "Sprinkler Service",
+    "Alarm Response",
+    "Emergency Response"
+  ],
+  "emergency_definition": [
+    "Sprinkler leak/burst",
+    "Fire alarm activation"
+  ],
+  "emergency_routing_rules": [
+    {
+      "order": 1,
+      "target_type": "phone",
+      "target_value": "555-2847",
+      "description": "Emergency dispatch line"
+    }
+  ],
+  "non_emergency_routing_rules": [
+    {
+      "order": 1,
+      "target_type": "voicemail",
+      "target_value": "voicemail system",
+      "description": "After hours: collect details in voicemail"
+    }
+  ],
+  "call_transfer_timeout_seconds": null,
+  "call_transfer_retries": null,
+  "integration_constraints": [
+    "Avoid auto-creating service jobs"
+  ],
+  "after_hours_flow_summary": "After hours: Emergency calls routed to dispatch/operator; non-emergency details collected via voicemail",
+  "office_hours_flow_summary": "Office hours: Calls transferred to appropriate department or operator",
+  "questions_or_unknowns": [
+    "office_address: specific address not provided in transcript",
+    "office_phone: phone number not provided",
+    "business_hours: no specific business hours mentioned",
+    "call_transfer_timeout: not specified, recommend 30-60 seconds"
+  ],
+  "notes": "Special considerations discussed during call - see questions_or_unknowns for details",
+  "created_at": "2026-03-04T19:17:14.615983"
+}

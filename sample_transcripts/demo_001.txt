@@ -1,0 +1,60 @@
+Demo Call Transcript - FireGuard Protection Services
+
+Date: January 15, 2025
+Duration: 35 minutes
+
+---
+
+AGENT: Hi! Welcome to Clara Answers. I'm excited to show you how our AI voice agent can help FireGuard Protection Services. Thanks for taking the time today.
+
+CLIENT: Thanks for having us. I'm Sarah from FireGuard. We handle fire protection systems, primarily commercial sprinkler and alarm systems. Right now, we're drowning in after-hours calls.
+
+AGENT: I hear you. Can you walk me through what a typical after-hours call looks like?
+
+CLIENT: Sure. So we get emergency calls like "my sprinkler is leaking" or "fire alarm is going off." These need to go to our dispatch team ASAP. But we also get non-emergency calls like "I need a technician next week" or "what's your pricing?"
+
+AGENT: Got it. And right now, these calls are going...where?
+
+CLIENT: Voicemail, mostly. We check voicemail in the morning, but emergencies can't wait. We have an on-call technician who has a dedicated phone line. That should ring immediately for emergencies.
+
+AGENT: Perfect. So the ideal flow would be: emergency calls → dispatch phone immediately, non-emergency calls → collect details for morning follow-up?
+
+CLIENT: Exactly. Our dispatch number is 555-2847. And for non-emergency, if the caller leaves details on the system, we can route them properly in the morning.
+
+AGENT: Let me show you how Clara would handle this. [System demonstrates call flow]. The agent would ask: "Is this an emergency?" If yes, transfers to your dispatch line. If no, collects their name, number, service needed, and confirms a callback during business hours.
+
+CLIENT: That's perfect. How does it know if it's business hours or after hours?
+
+AGENT: We set the timezone and business hours during setup. We can detect the time automatically.
+
+CLIENT: We're in Eastern Time. Business hours are 8 AM to 5 PM Monday through Friday. We also service a lot of commercial buildings, so the address is sometimes important for dispatch.
+
+AGENT: Great. So for emergencies, we'll also ask for the address. Does that work?
+
+CLIENT: Absolutely. That's critical.
+
+AGENT: What about integration with your systems?
+
+CLIENT: We use ServiceTrade for job management. But here's the thing—we never want Clara to automatically create jobs in ServiceTrade. It has to be manual. Some calls are information requests, not service calls.
+
+AGENT: Perfect. We'll note that as a constraint. The agent will collect info but won't trigger any integrations. You'll handle that manually in ServiceTrade.
+
+CLIENT: That sounds right. We have about 20 calls a month after hours, so even getting those handled cleanly would save us a lot of headache.
+
+AGENT: What about the voice style? Professional, friendly?
+
+CLIENT: Professional but not robotic. We want people to feel like they're talking to a real person, even if it's AI.
+
+AGENT: Noted. One more thing—if the transfer fails, what should happen?
+
+CLIENT: The agent should apologize and take a message. We have a dedicated person who checks voicemails at 7 AM, so they'll get back to emergencies within an hour.
+
+AGENT: Perfect. I think we have enough to create a preliminary agent for you. We'll generate v1 based on this conversation. Then when you go through detailed onboarding, we can refine everything.
+
+CLIENT: Sounds good. When can we get started?
+
+AGENT: We'll have the draft ready by end of day tomorrow.
+
+---
+
+End of Demo Call

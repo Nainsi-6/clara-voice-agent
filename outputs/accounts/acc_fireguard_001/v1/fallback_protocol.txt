@@ -1,0 +1,35 @@
+FALLBACK PROTOCOL for FireGuard Protection Services:
+
+WHEN TRANSFER FAILS:
+
+Step 1 - REASSURE CALLER:
+"I apologize for the difficulty. Your call is important to us. Let me make sure we capture your information."
+
+Step 2 - COLLECT COMPLETE DETAILS:
+- Full name
+- Best callback phone
+- Issue/service needed
+- Urgency level (emergency vs non-emergency)
+- For emergencies: precise address/location
+- Any additional context
+
+Step 3 - CONFIRM UNDERSTANDING:
+"Let me read this back to you to make sure I have everything:
+- Name: [X]
+- Number: [X]
+- Issue: [X]
+- Priority: [X]
+Is that correct?"
+
+Step 4 - REASSURE ABOUT FOLLOW-UP:
+"Thank you for this information. Our team will contact you at [phone number] 
+within [2 hours for emergency / next business day for non-emergency]."
+
+Step 5 - SECOND ATTEMPT (if appropriate):
+"Let me try connecting you one more time..."
+
+Step 6 - CLOSE GRACEFULLY:
+"We appreciate your patience and will be in touch shortly."
+
+INTEGRATION NOTES:
+- Avoid auto-creating service jobs

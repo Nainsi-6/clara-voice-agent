@@ -1,0 +1,113 @@
+Onboarding Call Transcript - FireGuard Protection Services
+
+Date: February 10, 2025
+Duration: 45 minutes
+
+---
+
+ONBOARDING_SPECIALIST: Hi Sarah, thanks for joining. Today we're going to lock in the exact configuration for your Clara agent. We'll go through the demo call notes and refine anything that's unclear.
+
+CLIENT: Great. We're excited to get this live.
+
+ONBOARDING_SPECIALIST: Perfect. Let's start with business hours. You mentioned 8 AM to 5 PM Eastern. Is that every day Monday through Friday?
+
+CLIENT: Yes. Monday through Friday 8 AM to 5 PM. Saturday and Sunday we're closed. No exceptions.
+
+ONBOARDING_SPECIALIST: Perfect. And if someone calls during business hours but outside 8-5, like 7:30 AM, they should get the after-hours flow?
+
+CLIENT: Right. Outside 8-5 is after-hours, including early mornings.
+
+ONBOARDING_SPECIALIST: Confirmed. Now, emergency definition. We have: "sprinkler leak or burst," "fire alarm triggered," "loss of water pressure," and "immediate safety hazard." Do these cover it?
+
+CLIENT: Yeah, those are good. Also add: sprinkler system not responding. We had a call where the system was offline and that's definitely an emergency.
+
+ONBOARDING_SPECIALIST: Got it. "Sprinkler system not responding" added. Anything else?
+
+CLIENT: No, those cover it pretty well.
+
+ONBOARDING_SPECIALIST: Great. Now let's talk routing. For emergencies, do you still want everything to go to the dispatch line at 555-2847?
+
+CLIENT: Yes. That's monitored 24/7. But if that line is busy or doesn't answer, what happens?
+
+ONBOARDING_SPECIALIST: Great question. We can set a timeout. How long should Clara wait before treating it as a failed transfer?
+
+CLIENT: Hmm. 30 seconds? If they don't pick up in 30 seconds, assume dispatch is overwhelmed and take a message instead.
+
+ONBOARDING_SPECIALIST: Perfect. 30 seconds, then fallback to message collection. After it takes the message, it should reassure the caller that you'll get back to them?
+
+CLIENT: Within an hour for emergencies. Our person checks voicemail at 7 AM and immediately triages emergencies. So if the call comes in at 3 AM and doesn't reach dispatch, we'll call them back by 4 AM max.
+
+ONBOARDING_SPECIALIST: Noted. So for the fallback message, Clara will say something like, "Your emergency has been recorded and our team will contact you within one hour."
+
+CLIENT: Yeah, that works.
+
+ONBOARDING_SPECIALIST: Now non-emergency calls. During business hours, if someone calls with a non-emergency, should they get transferred to a live person?
+
+CLIENT: We have a receptionist at ext. 2100 during business hours. She can route non-emergency calls. But we also need the agent to collect the caller's name, number, and issue first, so she knows what she's answering.
+
+ONBOARDING_SPECIALIST: Understood. So the flow is: Clara asks for name, number, and issue, then transfers to receptionist at ext. 2100?
+
+CLIENT: Exactly.
+
+ONBOARDING_SPECIALIST: And if that transfer fails during business hours?
+
+CLIENT: Leave them a message that someone will call them back within 2 hours. We monitor the fallback messages too.
+
+ONBOARDING_SPECIALIST: Got it. And after hours for non-emergency calls?
+
+CLIENT: Collect the information and reassure them we'll call back in the morning. No transfer attempts needed after hours for non-emergency.
+
+ONBOARDING_SPECIALIST: Perfect. So after hours: collect info, no transfer for non-emergency, confirm morning callback. Now, let's talk ServiceTrade. You said never auto-create jobs. But what if the caller clearly needs a technician? Should the agent confirm the appointment type?
+
+CLIENT: Yeah, the agent can collect that. Like, "You need an inspection" or "You need emergency repair." We'll handle the ServiceTrade entry manually, but it helps us categorize.
+
+ONBOARDING_SPECIALIST: Understood. ServiceTrade integration constraint: "Never auto-create jobs; manual entry only." Noted. Any other integrations or constraints?
+
+CLIENT: No, that's the main one.
+
+ONBOARDING_SPECIALIST: Great. Let me confirm the full after-hours emergency flow: Greet, ask purpose, confirm emergency, collect name, phone, address, attempt transfer to 555-2847 with 30-second timeout, if failed take message and reassure within one hour. Sound right?
+
+CLIENT: Perfect.
+
+ONBOARDING_SPECIALIST: And after-hours non-emergency: Greet, ask purpose, confirm non-emergency, collect name, phone, issue description, no transfer, confirm morning callback, close. Correct?
+
+CLIENT: Yes.
+
+ONBOARDING_SPECIALIST: Excellent. During business hours, we also want to collect name, phone, and issue for non-emergency, then transfer to receptionist at 2100. If transfer fails, fallback message saying someone will call within 2 hours. Agreed?
+
+CLIENT: Agreed.
+
+ONBOARDING_SPECIALIST: What about the voice? You said professional but not robotic. We'll tune that during testing, but any specific preferences?
+
+CLIENT: Just no robotic "beep boop" sounds. Keep it natural. Our customers should feel like they're talking to a real person.
+
+ONBOARDING_SPECIALIST: Absolutely. We'll set voice style to "professional" and test some samples with you next week. Now, one last thing: what's your office address? We might need that for context.
+
+CLIENT: 1847 Commerce Drive, Suite 200, Atlanta, GA 30303. But that's more for internal dispatch context, not something the agent should tell callers necessarily.
+
+ONBOARDING_SPECIALIST: Understood. Stored for internal use. Perfect. I think we've locked everything in. Let me summarize:
+
+ONBOARDING_SPECIALIST (continued):
+- Company: FireGuard Protection Services
+- Industry: Fire Protection & Sprinkler Systems
+- Timezone: Eastern
+- Business hours: Mon-Fri 8 AM - 5 PM ET
+- Emergency definition: Sprinkler leak/burst, fire alarm, water pressure loss, safety hazard, system offline
+- Emergency routing: 555-2847 (dispatch), 30-second timeout, fallback to message
+- Non-emergency during hours: Collect info, transfer to receptionist 2100, 60-second timeout, fallback to message
+- Non-emergency after hours: Collect info, confirm morning callback, no transfer
+- Voice: Professional, natural
+- Integration constraint: No auto ServiceTrade job creation
+- Office address: 1847 Commerce Drive, Suite 200, Atlanta, GA 30303
+
+CLIENT: That's perfect. That's exactly what we need.
+
+ONBOARDING_SPECIALIST: Great! We'll update the agent configuration and have it ready for UAT by Friday. We'll also run a few test calls through it so you can hear how it sounds in practice.
+
+CLIENT: Excited to see it. Thanks for walking through all this.
+
+ONBOARDING_SPECIALIST: Our pleasure. We'll be in touch by Friday with the updated agent.
+
+---
+
+End of Onboarding Call

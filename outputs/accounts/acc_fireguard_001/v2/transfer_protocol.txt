@@ -1,0 +1,23 @@
+CALL TRANSFER PROTOCOL for FireGuard Protection Services:
+
+BEFORE TRANSFER:
+1. Have all caller information ready: name, phone, issue, emergency status
+2. Inform caller: "I'm connecting you now..."
+3. Verify receiving person/department is available
+
+TRANSFER ATTEMPT:
+1. Target: phone: 555-2847
+2. Timeout: 30 seconds
+3. Retries: 1 attempt(s)
+4. On connection: Bridge call, then disconnect
+
+ON SUCCESSFUL TRANSFER:
+- Log: transfer time, destination, success status
+- End call cleanly
+
+ON TRANSFER FAILURE:
+- Do NOT disconnect caller
+- Apologize and explain: "I'm unable to reach our team right now, but your information is recorded"
+- Offer: "I can try again, or I can take a detailed message"
+- If caller chooses voicemail: Record complete details (name, number, address, issue)
+- Confirm: "We will contact you within [X hours]"

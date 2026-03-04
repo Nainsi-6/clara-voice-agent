@@ -1,0 +1,141 @@
+{
+  "account_id": "acc_fireguard_001",
+  "from_version": "v1",
+  "to_version": "v2",
+  "entries": [
+    {
+      "field_name": "business_hours",
+      "old_value": {
+        "monday_start": null,
+        "monday_end": null,
+        "tuesday_start": null,
+        "tuesday_end": null,
+        "wednesday_start": null,
+        "wednesday_end": null,
+        "thursday_start": null,
+        "thursday_end": null,
+        "friday_start": null,
+        "friday_end": null,
+        "saturday_start": null,
+        "saturday_end": null,
+        "sunday_start": null,
+        "sunday_end": null,
+        "timezone": "EST"
+      },
+      "new_value": {
+        "monday_start": "08:00",
+        "monday_end": "17:00",
+        "tuesday_start": "08:00",
+        "tuesday_end": "17:00",
+        "wednesday_start": "08:00",
+        "wednesday_end": "17:00",
+        "thursday_start": "08:00",
+        "thursday_end": "17:00",
+        "friday_start": "08:00",
+        "friday_end": "17:00",
+        "saturday_start": null,
+        "saturday_end": null,
+        "sunday_start": null,
+        "sunday_end": null,
+        "timezone": "EST"
+      },
+      "source": "onboarding",
+      "reason": "Onboarding provides exact business hours",
+      "timestamp": "2026-03-04T19:17:14.647409"
+    },
+    {
+      "field_name": "office_address",
+      "old_value": null,
+      "new_value": "1847 Commerce Drive, Suite 200, Atlanta, GA 30303",
+      "source": "onboarding",
+      "reason": null,
+      "timestamp": "2026-03-04T19:17:14.647419"
+    },
+    {
+      "field_name": "services_supported",
+      "old_value": [
+        "Sprinkler Service",
+        "Alarm Response",
+        "Emergency Response"
+      ],
+      "new_value": [
+        "Sprinkler Service",
+        "Alarm Response",
+        "Emergency Response",
+        "Inspection"
+      ],
+      "source": "onboarding",
+      "reason": "Onboarding adds service",
+      "timestamp": "2026-03-04T19:17:14.647436"
+    },
+    {
+      "field_name": "emergency_definition",
+      "old_value": [
+        "Sprinkler leak/burst",
+        "Fire alarm activation"
+      ],
+      "new_value": [
+        "Sprinkler leak/burst",
+        "Fire alarm activation",
+        "Loss of water pressure",
+        "Sprinkler system not responding",
+        "Alarm triggered",
+        "Immediate safety hazard"
+      ],
+      "source": "onboarding",
+      "reason": "Onboarding clarifies emergency criteria",
+      "timestamp": "2026-03-04T19:17:14.647445"
+    },
+    {
+      "field_name": "non_emergency_routing_rules",
+      "old_value": [
+        {
+          "order": 1,
+          "target_type": "voicemail",
+          "target_value": "voicemail system",
+          "description": "After hours: collect details in voicemail"
+        }
+      ],
+      "new_value": [
+        {
+          "order": 1,
+          "target_type": "voicemail",
+          "target_value": "voicemail system",
+          "description": "After hours: collect details in voicemail"
+        },
+        {
+          "order": 2,
+          "target_type": "extension",
+          "target_value": "2100",
+          "description": "Receptionist during business hours"
+        }
+      ],
+      "source": "onboarding",
+      "reason": "Onboarding specifies after-hours handling",
+      "timestamp": "2026-03-04T19:17:14.647454"
+    },
+    {
+      "field_name": "call_transfer_timeout_seconds",
+      "old_value": null,
+      "new_value": 30,
+      "source": "onboarding",
+      "reason": null,
+      "timestamp": "2026-03-04T19:17:14.647458"
+    },
+    {
+      "field_name": "integration_constraints",
+      "old_value": [
+        "Avoid auto-creating service jobs"
+      ],
+      "new_value": [
+        "Avoid auto-creating service jobs",
+        "Requires manual job creation"
+      ],
+      "source": "onboarding",
+      "reason": "Onboarding adds integration constraint",
+      "timestamp": "2026-03-04T19:17:14.647463"
+    }
+  ],
+  "summary": null,
+  "created_at": "2026-03-04T19:17:14.645041"
+}

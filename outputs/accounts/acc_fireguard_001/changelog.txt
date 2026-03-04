@@ -1,0 +1,38 @@
+Changelog: v1 → v2
+Account: acc_fireguard_001
+Updated: 2026-03-04T19:17:14.645041
+Total Changes: 7
+
+Field: business_hours
+  Old: BusinessHours(monday_start=None, monday_end=None, tuesday_start=None, tuesday_end=None, wednesday_start=None, wednesday_end=None, thursday_start=None, thursday_end=None, friday_start=None, friday_end=None, saturday_start=None, saturday_end=None, sunday_start=None, sunday_end=None, timezone='EST')
+  New: BusinessHours(monday_start='08:00', monday_end='17:00', tuesday_start='08:00', tuesday_end='17:00', wednesday_start='08:00', wednesday_end='17:00', thursday_start='08:00', thursday_end='17:00', friday_start='08:00', friday_end='17:00', saturday_start=None, saturday_end=None, sunday_start=None, sunday_end=None, timezone='EST')
+  Reason: Onboarding provides exact business hours
+
+Field: office_address
+  Old: None
+  New: 1847 Commerce Drive, Suite 200, Atlanta, GA 30303
+
+Field: services_supported
+  Old: ['Sprinkler Service', 'Alarm Response', 'Emergency Response']
+  New: ['Sprinkler Service', 'Alarm Response', 'Emergency Response', 'Inspection']
+  Reason: Onboarding adds service
+
+Field: emergency_definition
+  Old: ['Sprinkler leak/burst', 'Fire alarm activation']
+  New: ['Sprinkler leak/burst', 'Fire alarm activation', 'Loss of water pressure', 'Sprinkler system not responding', 'Alarm triggered', 'Immediate safety hazard']
+  Reason: Onboarding clarifies emergency criteria
+
+Field: non_emergency_routing_rules
+  Old: [RoutingRule(order=1, target_type='voicemail', target_value='voicemail system', description='After hours: collect details in voicemail')]
+  New: [RoutingRule(order=1, target_type='voicemail', target_value='voicemail system', description='After hours: collect details in voicemail'), RoutingRule(order=2, target_type='extension', target_value='2100', description='Receptionist during business hours')]
+  Reason: Onboarding specifies after-hours handling
+
+Field: call_transfer_timeout_seconds
+  Old: None
+  New: 30
+
+Field: integration_constraints
+  Old: ['Avoid auto-creating service jobs']
+  New: ['Avoid auto-creating service jobs', 'Requires manual job creation']
+  Reason: Onboarding adds integration constraint
+
